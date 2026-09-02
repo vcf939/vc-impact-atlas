@@ -13,7 +13,7 @@
     blue: {
       category: '影響力場域 03', title: 'NPO 領導力與永續治理', short: '系統思考 × 永續治理',
       statement: '以系統思考與因人情境領導陪伴主管成長，讓團隊關係、組織能力與治理品質持續成熟。',
-      path: ['系統', '領導', '治理'], border: '#1595d0'
+      path: ['系統', '領導', '治理'], border: '#1595d0', href: 'domains/npo-leadership/index.html'
     },
     yellow: {
       category: '影響力場域 04', title: '共識引導與公民對話', short: '引導 × 公民對話',
