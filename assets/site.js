@@ -32,6 +32,25 @@
     }
   };
 
+  const sdgsKnowledgeGrid = document.querySelector('#knowledge .knowledge-grid');
+  if (sdgsKnowledgeGrid && !document.querySelector('.sdgs-game-entry')) {
+    const entry = document.createElement('a');
+    entry.className = 'sdgs-game-entry';
+    entry.href = './game/';
+
+    const copy = document.createElement('div');
+    const label = document.createElement('small');
+    label.textContent = 'Experience gateway · 2030 SDGs Game';
+    const title = document.createElement('strong');
+    title.textContent = '玩一場 Game，看見我們正在共同創造的世界';
+    copy.append(label, title);
+
+    const action = document.createElement('span');
+    action.textContent = '進入體驗旅程 →';
+    entry.append(copy, action);
+    sdgsKnowledgeGrid.before(entry);
+  }
+
   const card = document.querySelector('.focus-card');
   if (!card) return;
 

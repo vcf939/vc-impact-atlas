@@ -808,6 +808,11 @@ button { color: inherit; }
 .section-heading h2 { margin: 12px 0 12px; font-size: clamp(31px, 4vw, 48px); line-height: 1.2; letter-spacing: -.04em; }
 .section-heading > p:last-child { margin: 0; color: #65706b; font-size: 14px; line-height: 1.8; }
 .knowledge-grid { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 18px; }
+.sdgs-game-entry { display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center; margin: 0 0 22px; padding: 26px 30px; color: #17334a; text-decoration: none; background: linear-gradient(115deg, #fff7db, #eef8f1 55%, #e8f4fb); border: 1px solid rgba(23,51,74,.14); box-shadow: 0 16px 48px rgba(36,49,43,.07); transition: transform .2s ease, box-shadow .2s ease; }
+.sdgs-game-entry:hover, .sdgs-game-entry:focus-visible { transform: translateY(-3px); box-shadow: 0 20px 54px rgba(36,49,43,.12); }
+.sdgs-game-entry small { display: block; margin-bottom: 7px; color: #ef6b27; font-size: 10px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+.sdgs-game-entry strong { display: block; font-size: 22px; line-height: 1.35; }
+.sdgs-game-entry span { color: #2f7d55; font-size: 13px; font-weight: 900; white-space: nowrap; }
 .knowledge-card, .asset-card, .relation-card { position: relative; background: rgba(255,255,255,.58); border: 1px solid rgba(255,255,255,.94); box-shadow: 0 16px 48px rgba(36,49,43,.055); }
 .knowledge-card { min-height: 270px; padding: 28px; }
 .knowledge-card.primary { background: linear-gradient(145deg, rgba(242,138,75,.24), rgba(255,255,255,.68)); border-color: rgba(239,107,39,.23); }
@@ -861,6 +866,8 @@ button { color: inherit; }
   .domain-hero-visual { width: min(520px, 80vw); margin-inline: auto; }
   .domain-manifesto { grid-template-columns: 1fr; gap: 28px; }
   .knowledge-grid { grid-template-columns: 1fr 1fr; }
+  .sdgs-game-entry { grid-template-columns: 1fr; gap: 12px; }
+  .sdgs-game-entry span { white-space: normal; }
   .knowledge-card.primary { grid-column: 1 / -1; }
   .impact-path { grid-template-columns: repeat(2, 1fr); }
   .path-step:nth-child(2)::after, .path-step:nth-child(6)::after { display: none; }
